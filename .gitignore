@@ -12,9 +12,6 @@
 # cache
 /.vscode
 
-# package-lock
-
-
 # misc
 .DS_Store
 .env.local
