@@ -1,0 +1,10 @@
+.OrderSummary {
+    color: #fff;
+    font-weight: 700;
+}
+
+.OrderSummaryUl {
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 0;
+}
