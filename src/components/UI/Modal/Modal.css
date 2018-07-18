@@ -10,8 +10,6 @@
     top: 30%;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
-    background: url('../../../assets/burger-lg2.png');
-    background-size: cover;
 }
 
 @media (min-width: 600px) {
