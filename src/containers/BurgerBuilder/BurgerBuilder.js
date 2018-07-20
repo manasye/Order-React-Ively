@@ -10,16 +10,16 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import axios from '../../axios-orders';
 
 const INGREDIENT_PRICES = {
-    salad: 0.5,
-    cheese: 0.4,
-    meat: 1.3,
-    bacon: 0.7
+    salad: 2000,
+    cheese: 3000,
+    meat: 5000,
+    bacon: 5000
 };
 
 class BurgerBuilder extends Component {
     state = {
         ingredients: null,
-        totalPrice: 4,
+        totalPrice: 2000,
         purchasable: false,
         purchasing: false,
         loading: false,
@@ -88,8 +88,6 @@ class BurgerBuilder extends Component {
     }
 
     purchaseContinueHandler = () => {
-        // alert('You continue!');
-        
         const queryParams = [];
         for (let i in this.state.ingredients) {
             queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
@@ -134,7 +132,6 @@ class BurgerBuilder extends Component {
         if ( this.state.loading ) {
             orderSummary = <Spinner />;
         }
-        // {salad: true, meat: false, ...}
         return (
             <Aux>
                 <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler}>
