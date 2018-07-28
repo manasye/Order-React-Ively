@@ -13,7 +13,7 @@ Simply start with this command and you can see your project in `localhost:3000` 
 ## How to Build A Production
 ` npm run build `
 
-This command will creat a leaner version of the project that are ready to deploy.
+This command will create a leaner version of the project ready to deploy.
 
 ## Routing Issue
 Firebase come with a handy rewrite rules prepared for routing in react. If you want to rewrite rule in your localhost, put this command in your .htaccess on the public folder and run ` npm run build ` again.
