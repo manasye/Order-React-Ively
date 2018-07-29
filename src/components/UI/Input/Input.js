@@ -14,7 +14,7 @@ const input = props => {
         case "input":
             inputEl = (
                 <input
-                    className={inputClasses.join(' ')}
+                    className={inputClasses.join(" ")}
                     {...props.elementConfig}
                     value={props.value}
                     onChange={props.changed}
@@ -24,7 +24,7 @@ const input = props => {
         case "textarea":
             inputEl = (
                 <textarea
-                    className={inputClasses.join(' ')}
+                    className={inputClasses.join(" ")}
                     {...props.elementConfig}
                     value={props.value}
                     onChange={props.Pchanged}
@@ -34,7 +34,7 @@ const input = props => {
         case "select":
             inputEl = (
                 <select
-                    className={inputClasses.join(' ')}
+                    className={inputClasses.join(" ")}
                     value={props.value}
                     onChange={props.changed}
                 >
@@ -49,7 +49,7 @@ const input = props => {
         default:
             inputEl = (
                 <input
-                    className={inputClasses.join(' ')}
+                    className={inputClasses.join(" ")}
                     {...props.elementConfig}
                     value={props.value}
                 />
