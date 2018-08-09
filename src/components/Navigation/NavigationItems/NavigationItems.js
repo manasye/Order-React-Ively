@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import classes from "./NavigationItems.css";
-import NavigationItem from "./NavigationItem/NavigationItem";
+import classes from './NavigationItems.css';
+import NavigationItem from './NavigationItem/NavigationItem';
 
 const navigationItems = props => (
     <ul className={classes.NavigationItems}>
@@ -9,12 +9,12 @@ const navigationItems = props => (
             Burger Builder
         </NavigationItem>
         {props.isAuth ? (
-            <NavigationItem link="/orders"> Orders </NavigationItem>
+            <NavigationItem link="/orders">Orders</NavigationItem>
         ) : null}
         {!props.isAuth ? (
-            <NavigationItem link="/auth"> Authenticate </NavigationItem>
+            <NavigationItem link="/auth">Authenticate</NavigationItem>
         ) : (
-            <NavigationItem link="/logout"> Logout </NavigationItem>
+            <NavigationItem link="/logout">Logout</NavigationItem>
         )}
     </ul>
 );
